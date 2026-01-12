@@ -1,0 +1,98 @@
+{
+  "peliculas": [
+    {
+      "id": 1,
+      "titulo": "Avatar: Fuego y Ceniza",
+      "urlFoto": "https://cdn.kinepolis.es/images/ES/65459BAD-CA99-4711-A97B-E049A5FA94D2/HO00005908/0000011504/Avatar:_fuego_y_ceniza.jpg?impolicy=Poster",
+      "resumen": "Jake Sully y Neytiri afrontan una nueva amenaza que surge de las regiones volcánicas de Pandora.\nAntiguas alianzas se pondrán a prueba mientras una tribu desconocida emerge.\nEl destino del planeta pende de un frágil equilibrio.",
+      "calificacion": "PEGI 12"
+    },
+    {
+      "id": 2,
+      "titulo": "Zootrópolis 2",
+      "urlFoto": "https://cdn.kinepolis.es/images/ES/65459BAD-CA99-4711-A97B-E049A5FA94D2/HO00005904/0000011489/Zootr%C3%B3polis_2.jpg?impolicy=Poster",
+      "resumen": "Judy Hopps y Nick Wilde se enfrentan a un nuevo misterio que sacude la ciudad.\nUna conspiración amenaza la convivencia entre las distintas especies.\nEl trabajo en equipo será clave para salvar Zootrópolis.",
+      "calificacion": "PEGI 7"
+    },
+    {
+      "id": 3,
+      "titulo": "Five Nights at Freddy's 2",
+      "urlFoto": "https://cdn.kinepolis.es/images/ES/65459BAD-CA99-4711-A97B-E049A5FA94D2/HO00006064/0000011598/Five_Nights_at_Freddys_2.jpg?impolicy=Poster",
+      "resumen": "El terror regresa cuando un nuevo vigilante acepta el turno nocturno.\nLos animatrónicos esconden secretos aún más oscuros que antes.\nCada noche es una lucha por sobrevivir hasta el amanecer.",
+      "calificacion": "PEGI 16"
+    },
+    {
+      "id": 4,
+      "titulo": "Núremberg",
+      "urlFoto": "https://cdn.kinepolis.es/images/ES/65459BAD-CA99-4711-A97B-E049A5FA94D2/HO00006116/0000011721/N%C3%BAremberg.jpg?impolicy=Poster",
+      "resumen": "Un intenso drama histórico centrado en los juicios de posguerra.\nAbogados y jueces se enfrentan a dilemas morales sin precedentes.\nLa justicia y la memoria chocan en una Europa devastada.",
+      "calificacion": "PEGI 16"
+    },
+    {
+      "id": 5,
+      "titulo": "Rey de Reyes",
+      "urlFoto": "https://cdn.kinepolis.es/images/ES/65459BAD-CA99-4711-A97B-E049A5FA94D2/HO00006065/0000011506/Rey_de_Reyes.jpg?impolicy=Poster",
+      "resumen": "Una épica historia ambientada en tiempos bíblicos.\nLa fe, el sacrificio y el poder se entrelazan en una narrativa profunda.\nUn relato sobre liderazgo y esperanza eterna.",
+      "calificacion": "PEGI 12"
+    },
+    {
+      "id": 6,
+      "titulo": "Roofman",
+      "urlFoto": "https://cdn.kinepolis.es/images/ES/65459BAD-CA99-4711-A97B-E049A5FA94D2/HO00006146/0000011711/Roofman:_Un_Ladr%C3%B3n_en_el_Tejado.jpg?impolicy=Poster",
+      "resumen": "Un ladrón escurridizo burla a la policía moviéndose por los tejados.\nCada golpe es más arriesgado que el anterior.\nLa ciudad se convierte en su tablero de juego.",
+      "calificacion": "PEGI 12"
+    },
+    {
+      "id": 7,
+      "titulo": "F1® La Película",
+      "urlFoto": "https://cdn.kinepolis.es/images/ES/65459BAD-CA99-4711-A97B-E049A5FA94D2/HO00005786/0000010629/F1%C2%AE_La_Pel%C3%ADcula.jpg?impolicy=Poster",
+      "resumen": "Un piloto veterano regresa para formar a una joven promesa.\nLa velocidad y la rivalidad dominan cada carrera.\nUna historia de redención sobre el asfalto.",
+      "calificacion": "PEGI 12"
+    },
+    {
+      "id": 8,
+      "titulo": "Wicked Parte II",
+      "urlFoto": "https://cdn.kinepolis.es/images/ES/65459BAD-CA99-4711-A97B-E049A5FA94D2/HO00006148/0000011453/Wicked_Parte_II_(Canciones_en_VOSE).jpg?impolicy=Poster",
+      "resumen": "La historia de las brujas de Oz llega a su desenlace.\nLas decisiones del pasado tienen consecuencias irreversibles.\nUn final emotivo lleno de música y magia.",
+      "calificacion": "PEGI 7"
+    },
+    {
+      "id": 9,
+      "titulo": "Ahora Me Ves 3",
+      "urlFoto": "https://cdn.kinepolis.es/images/ES/65459BAD-CA99-4711-A97B-E049A5FA94D2/HO00006061/0000011463/Ahora_me_Ves_3.jpg?impolicy=Poster",
+      "resumen": "Los Cuatro Jinetes regresan con ilusiones aún más imposibles.\nUn nuevo enemigo desafía su ingenio y habilidades.\nNada es lo que parece en este juego de magia.",
+      "calificacion": "PEGI 12"
+    },
+    {
+      "id": 10,
+      "titulo": "Golpes",
+      "urlFoto": "https://cdn.kinepolis.es/images/ES/65459BAD-CA99-4711-A97B-E049A5FA94D2/HO00006169/0000011763/Golpes.jpg?impolicy=Poster",
+      "resumen": "Un drama crudo ambientado en el mundo del boxeo clandestino.\nLa violencia esconde historias de supervivencia personal.\nCada combate deja cicatrices dentro y fuera del ring.",
+      "calificacion": "PEGI 16"
+    },
+    {
+      "id": 11,
+      "titulo": "Me Has Robado el Corazón",
+      "urlFoto": "https://cdn.kinepolis.es/images/ES/65459BAD-CA99-4711-A97B-E049A5FA94D2/HO00006155/0000011724/Me_has_robado_el_coraz%C3%B3n.jpg?impolicy=Poster",
+      "resumen": "Una comedia romántica sobre encuentros inesperados.\nEl amor surge cuando menos se espera.\nUna historia cálida sobre segundas oportunidades.",
+      "calificacion": "PEGI 7"
+    },
+    {
+      "id": 12,
+      "titulo": "The Running Man",
+      "urlFoto": "https://cdn.kinepolis.es/images/ES/65459BAD-CA99-4711-A97B-E049A5FA94D2/HO00006063/0000011485/The_Running_Man.jpg?impolicy=Poster",
+      "resumen": "En un futuro distópico, un concurso mortal domina la televisión.\nLos participantes luchan por sobrevivir ante millones de espectadores.\nLa rebelión nace en medio del espectáculo.",
+      "calificacion": "PEGI 16"
+    }
+  ],
+  "banners":[
+    {
+      "id":"superior",
+      "urlFoto":"https://targetemsecure.blob.core.windows.net/36306785-b55b-4687-b7f1-74c1bd223036/291f72dc-e7b4-48ed-bd7f-844a53fab758.png"
+    },
+    {
+      "id":"central",
+      "urlFoto":"https://targetemsecure.blob.core.windows.net/36306785-b55b-4687-b7f1-74c1bd223036/596297ed-769a-416f-a6c4-42d9ac626f41.jpg"
+    }
+  ]   
+}
