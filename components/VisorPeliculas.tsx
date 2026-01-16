@@ -11,7 +11,7 @@ type VisorPeliculasProps = {
 export default function VisorPeliculas({peliculas}: VisorPeliculasProps) {
   
   const {width} = useWindowDimensions()
-  const numColumnas = width > 768 ? 4 : 2
+  const numColumnas = width > 768 ? 4 : 2 
 
   return (
     <View className='bg-background dark:bg-darkBackground p-4'>
