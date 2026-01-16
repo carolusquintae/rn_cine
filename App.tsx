@@ -3,27 +3,37 @@ import { Alert, ScrollView, View } from 'react-native'
 import React, { useState } from 'react'
 import Toolbar from 'components/Toolbar'
 import Banner from 'components/Banner'
-import { ImagenBanner, ImagenBannerNula } from 'model/Types'
+import { ImagenBanner, ImagenBannerNula, Peliculas } from 'model/Types'
 import { cargarBanners } from 'helpers/CargadorBanners'
+import Buscador from 'components/Buscador'
+import VisorPeliculas from 'components/VisorPeliculas'
+import { cargarPeliculas } from 'helpers/CargadorPeliculas'
 
 export default function App() {
 
   const [banners, setBanners] = useState<Array<ImagenBanner>>([])
+  const [peliculas, setPeliculas] = useState<Peliculas>([])
 
   function accionCargarBanner() {
     cargarBanners()
       .then(banner => setBanners(banner))
-      .catch(error => mostrarError(error))
+      .catch(error => mostrarError(error.toString()))
   }
-
-  useState(() => accionCargarBanner)
-
+  
+  function accionCargarPeliculas() {
+    cargarPeliculas()
+    .then(pelicula => setPeliculas(pelicula))
+    .catch(error => mostrarError(error.toString()))
+  }
+  
+  useState(accionCargarBanner)
+  useState(accionCargarPeliculas)
   
   function getBanner(id: string) {
-    return banners.find(bannerEncontrado => bannerEncontrado.id === id)?.id || ImagenBannerNula.id
+    return banners.find(bannerEncontrado => bannerEncontrado.id === id)?.urlFoto || ImagenBannerNula.urlFoto
   }
   
-  function mostrarError(mensaje: string): any {
+  function mostrarError(mensaje: string) {
     Alert.alert("Error", mensaje.toString())
   }
 
@@ -33,6 +43,8 @@ export default function App() {
         <Toolbar />
       </ScrollView>
       <Banner source={getBanner("central")} className='h-56' />
+      <Buscador />
+      <VisorPeliculas peliculas={peliculas} />
     </View>
   )
 }
