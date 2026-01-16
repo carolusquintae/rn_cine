@@ -1,5 +1,5 @@
 import '../global.css'
-import { View, Text } from 'react-native'
+import { View, Text, useWindowDimensions } from 'react-native'
 import React from 'react'
 import { Pelicula } from 'model/Types'
 import { Image } from 'expo-image'
@@ -10,8 +10,12 @@ type VisorPeliculaProps = {
 }
 
 export default function VisorPelicula({pelicula}: VisorPeliculaProps) {
+  
+  const {width} = useWindowDimensions()
+  const tamañoIcono = width > 768 ? 32 : 24 
+
   return (
-    <View className='w-1/2 p-2'>
+    <View className='w-1/2 p-2 md:w-1/4'>
       <View className='w-full h-auto'>
         <Image
           source={pelicula.urlFoto}
@@ -19,11 +23,11 @@ export default function VisorPelicula({pelicula}: VisorPeliculaProps) {
         />
       </View>
 
-      <View className='w-full h-28 bg-white border-gray-200'>
-        <Text className='text-xl font-bold'>{pelicula.titulo}</Text>
+      <View className='w-full h-28 bg-white border-gray-200 md:h-36'>
+        <Text className='text-xl font-bold md:text-2xl'>{pelicula.titulo}</Text>
         <View className='flex-row justify-between'>
-          <MaterialIcons name={"visibility"} size={24} color={"#ff4f2e"}/>
-          <MaterialIcons name={"favorite"} size={24} color={"#ff4f2e"}/>
+          <MaterialIcons name={"visibility"} size={tamañoIcono} color={"#ff4f2e"}/>
+          <MaterialIcons name={"favorite"} size={tamañoIcono} color={"#ff4f2e"}/>
         </View>
       </View>
     </View>

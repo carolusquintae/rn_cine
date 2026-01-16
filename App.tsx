@@ -42,7 +42,7 @@ export default function App() {
       <ScrollView>
         <Toolbar />
       </ScrollView>
-      <Banner source={getBanner("central")} className='h-56' />
+      <Banner source={getBanner("central")} className='h-56 md:h-80' />
       <Buscador />
       <VisorPeliculas peliculas={peliculas} />
     </View>
