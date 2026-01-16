@@ -14,13 +14,13 @@ export default function Boton({texto, relleno, className}: BotonProps) {
   const estilosBase = 'flex-column items-center py-2 px-8 mt-2 rounded-lg'
 
   const estiloBoton = {
-    'bg-[#FF4F2E]': relleno === true,
-    'bg-white border-2 border-[#FF4F2E]': relleno === false
+    'bg-primary dark:bg-darkPrimary': relleno === true,
+    'bg-white border-2 border-primary dark:border-darkPrimary': relleno === false
   }
 
   const estilosTexto = {
     'text-white': relleno === true,
-    'text-[#FF4F2E] font-semibold': relleno === false,
+    'text-primary dark:text-darkPrimary font-semibold': relleno === false,
   }
 
   return (

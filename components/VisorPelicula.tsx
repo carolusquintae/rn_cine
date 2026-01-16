@@ -4,6 +4,7 @@ import React from 'react'
 import { Pelicula } from 'model/Types'
 import { Image } from 'expo-image'
 import { MaterialIcons } from '@expo/vector-icons'
+import { useColorScheme } from 'nativewind'
 
 type VisorPeliculaProps = {
   pelicula: Pelicula
@@ -12,7 +13,10 @@ type VisorPeliculaProps = {
 export default function VisorPelicula({pelicula}: VisorPeliculaProps) {
   
   const {width} = useWindowDimensions()
-  const tamañoIcono = width > 768 ? 32 : 24 
+  const tamañoIcono = width > 768 ? 32 : 24
+
+  const tema = useColorScheme().colorScheme
+  const colorIconos = tema === "light" ? "#ff4f2e" : "#b76317"
 
   return (
     <View className='w-1/2 p-2 md:w-1/4'>
@@ -23,11 +27,11 @@ export default function VisorPelicula({pelicula}: VisorPeliculaProps) {
         />
       </View>
 
-      <View className='w-full h-28 bg-white border-gray-200 md:h-36'>
+      <View className='w-full h-28 bg-white border-backgroundSecondary dark:border-darkBackgroundSecondary md:h-36'>
         <Text className='text-xl font-bold md:text-2xl'>{pelicula.titulo}</Text>
         <View className='flex-row justify-between'>
-          <MaterialIcons name={"visibility"} size={tamañoIcono} color={"#ff4f2e"}/>
-          <MaterialIcons name={"favorite"} size={tamañoIcono} color={"#ff4f2e"}/>
+          <MaterialIcons name={"visibility"} size={tamañoIcono} color={colorIconos}/>
+          <MaterialIcons name={"favorite"} size={tamañoIcono} color={colorIconos}/>
         </View>
       </View>
     </View>

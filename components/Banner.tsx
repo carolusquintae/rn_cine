@@ -15,7 +15,7 @@ type BannerProps = {
 export default function Banner({source, className}: BannerProps) {
   return (
     <View className={clsx(className, 'w-full')}>
-      <Image source={source} contentFit={"fill"} />
+      <Image source={source} />
     </View>
   )
 }

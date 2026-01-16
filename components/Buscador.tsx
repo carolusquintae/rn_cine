@@ -8,7 +8,7 @@ export default function Buscador() {
   
   const styles = {
     padding: 'px-4 py-2',
-    text: 'text-[#b4a494] font-bold',
+    text: 'text-text dark:text-darkText font-bold',
     textInputGeneral: 'border-gray-400 border bg-white color-[#7782b7] rounded text-sm',
     textInputTablet: 'gap-4',
     estilosTablet: 'md:flex-row  md:items-center'
@@ -17,7 +17,7 @@ export default function Buscador() {
   const estilosTextInput = clsx(styles.textInputGeneral, styles.padding, styles.estilosTablet, styles.textInputTablet)
   
   return (
-    <View className={clsx(styles.padding, styles.estilosTablet, 'bg-gray-200 gap-2 md:justify-between')}>
+    <View className={clsx(styles.padding, styles.estilosTablet, 'bg-backgroundSecondary dark:bg-darkSecondary gap-2 md:justify-between')}>
       <Boton texto={"YA A LA VENTA"} relleno={true} />
       <Boton texto={"HOY"} relleno={false} />
       <Boton texto={"PRÓXIMAMENTE"} relleno={false} />
